@@ -98,6 +98,12 @@ alias ea='emacs -nw'
 alias magune='cd /mnt/hgfs/magunesiumu/Users/マグネシウム/'
 alias ph3='python3'
 alias g++='g++ -std=c++1y'
+alias giba='git branch -a'
+alias gich='git chechout'
+alias giad='git add'
+alias gipu='git pull'
+alias gicm='git commit'
+alias gish='git push'
 
 
 # Add an "alert" alias for long running commands.  Use like so:
