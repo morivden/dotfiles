@@ -104,6 +104,9 @@ alias giad='git add'
 alias gipu='git pull'
 alias gicm='git commit'
 alias gish='git push'
+alias bec='bundle exec'
+alias ber='bundle exec rails'
+alias sl3='sqlite3'
 
 
 # Add an "alert" alias for long running commands.  Use like so:
