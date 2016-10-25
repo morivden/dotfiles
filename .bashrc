@@ -99,7 +99,7 @@ alias magune='cd /mnt/hgfs/magunesiumu/Users/マグネシウム/'
 alias ph3='python3'
 alias g++='g++ -std=c++1y'
 alias giba='git branch -a'
-alias gich='git chechout'
+alias gich='git checkout'
 alias giad='git add'
 alias gipu='git pull'
 alias gicm='git commit'
@@ -107,6 +107,9 @@ alias gish='git push'
 alias bec='bundle exec'
 alias ber='bundle exec rails'
 alias sl3='sqlite3'
+alias asano='sudo apt-get install -y'
+alias heartbleed='nmap -sV -p443 --script=ssl-heartbleed'
+alias msf='sudo msfconsole'
 
 
 # Add an "alert" alias for long running commands.  Use like so:

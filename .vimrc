@@ -62,6 +62,7 @@ set pastetoggle=<F11>
 "インデント関連のオプション
 
 "タブ文字を4文字分の幅で表示
+set expandtab
 set shiftwidth=4
 set tabstop=4
 
@@ -77,3 +78,8 @@ noremap <C-S> :update<CR>
 vnoremap <C-S> <C-C>:update<CR>
 inoremap <C-S> <C-O>:update<CR>
 
+inoremap ( ()<LEFT>
+inoremap { {}<LEFT>
+inoremap [ []<LEFT>
+inoremap " ""<LEFT>
+inoremap ' ''<LEFT>

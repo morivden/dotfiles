@@ -18,22 +18,22 @@ autoload -U colors && colors
 setopt prompt_subst
 
 # vcs_infoロード    
-# autoload -Uz vcs_info    
+ autoload -Uz vcs_info    
 #
 # # vcsの表示    
-# zstyle ':vcs_info:*' formats '%s][* %F{green}%b%f'    
-# zstyle ':vcs_info:*' actionformats '%s][* %F{green}%b%f(%F{red}%a%f)'    
+  zstyle ':vcs_info:*' formats '%s][* %F{green}%b%f'    
+  zstyle ':vcs_info:*' actionformats '%s][* %F{green}%b%f(%F{red}%a%f)'    
 # # プロンプト表示直前にvcs_info呼び出し    
-# precmd() { vcs_info }    
+ precmd() { vcs_info }    
 # # プロンプト表示    
-# RPROMPT='[${vcs_info_msg_0_}]:%~/%f ' 
+# RPROMPT='[${vcs_info_msg_0_}]:%~/%f '
  RPROMPT='[${vcs_info_msg_0_}]'
 
 #プロンプトの設定
-PROMPT="%{$fg_bold[cyan]%}[%d]%{$reset_color%}
+PROMPT="
+%{$fg_bold[cyan]%}[%d]%{$reset_color%}
 %(?.%{$fg_bold[green]%}.%{$fg_bold[red]%})%(?![%n@%m]
-(* ^ _ ^ #) -----> !
-[%n@%m]
+(* ^ _ ^ #) -----> ![%n@%m]
 (* > _ <; %) -----> )%{$reset_color%}"
 
 #右側プロンプト
@@ -87,3 +87,14 @@ zstyle ':completion:*:options' description 'yes'
 if [ -f ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]; then
   source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 fi
+
+export NVM_DIR="/home/natoriumu/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+
+# rbenv
+[[ -d ~/.rbenv  ]] && \
+    export PATH=${HOME}/.rbenv/bin:${PATH} && \
+    eval "$(rbenv init -)"
